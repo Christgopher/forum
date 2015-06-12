@@ -1,9 +1,16 @@
-<h1>Questions:</h1>
+<h2>Questions:</h2>
 
 <ul>
   {{#each question in model}}
-    <li>{{#link-to 'question' question}}{{question.question}} {{question.author}}{{/link-to}}</li>
+    <li>{{#link-to 'question' question}}{{question.question}} Asked by {{question.author}}{{/link-to}}</li>
   {{/each}}
 </ul>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 {{#link-to 'new-question' classNames="btn btn-primary"}}New question{{/link-to}}
+<br>
+<br>
