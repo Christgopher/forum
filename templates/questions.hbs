@@ -1,7 +1,9 @@
 <h1>Questions:</h1>
 
 <ul>
-  {{#each post in model}}
-    <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+  {{#each question in model}}
+    <li>{{question.question}}{{question.author}}</li>
   {{/each}}
 </ul>
+
+{{#link-to 'new-question' classNames="btn btn-primary"}}New question{{/link-to}}

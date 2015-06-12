@@ -1,4 +1,4 @@
-Forum.PostsRoute = Ember.Route.extend({
+Forum.QuestionsRoute = Ember.Route.extend({
   model: function() {
     return this.store.find('question');
   }
